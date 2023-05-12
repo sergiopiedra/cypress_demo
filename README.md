@@ -56,7 +56,7 @@ export default new HomePage()
 -  In the `integrations` folder, create a new file called `testNameDemo.spec.ts`.
 -  In the `testNameDemo.spec.ts` file, add the following code:
 ```
-import HomePage from '../page-objects/HomePage'
+import HomePage from '../page-objects/homePage'
 
 describe('Home Page', () => {
   before(() => {
@@ -70,3 +70,7 @@ describe('Home Page', () => {
 ```
 - Save the file.
 - In the Cypress Test Runner, click on the `testNameDemo.spec.ts` file to run the test.
+
+#### To add the typescript configuration file
+- In the root directory of your project/folder
+ - run the following command in your terminal or command prompt: `tsc --init`
