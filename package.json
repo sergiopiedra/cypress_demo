@@ -4,12 +4,14 @@
   "description": "This is a demo project for cypress using typescript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "runner": "cypress open --e2e --browser chrome"
   },
   "keywords": [],
-  "author": "",
+  "author": "sergiopiedra",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.12.0"
+    "@types/cypress": "^1.1.3",
+    "cypress": "^12.12.0",
+    "typescript": "^5.0.4"
   }
 }
