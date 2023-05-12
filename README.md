@@ -27,7 +27,7 @@ npm init -y
 ######  `npm init -y` *will generate a package.json file with default settings, without prompting you to enter any information.*
 - Install Cypress and typescript as a devs dependencies:
 ```
-npm install cypress --save-dev typescript @types/node @types/cypress
+npm install cypress --save-dev typescript @types/node @types/cypress @cypress/xpath
 ```
 ######  *This will download and install the latest version of Cypress and TypeScript, as well as the TypeScript definitions for Node.js and Cypress.*
 - Once Cypress is installed, you can open it by running the following command in your terminal or command prompt:

@@ -6,5 +6,10 @@ class HomePage {
     getTitle() {
       return cy.title();
     }
+
+    getNavBar() {
+      return cy.get('.nav.navbar-nav.level0');
+    }
+
   }
   export default new HomePage()
