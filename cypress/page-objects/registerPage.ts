@@ -15,3 +15,4 @@ class registerPage {
         return cy.get('button.btnregister.btn.btn-primary');
     }
 }
+export default new registerPage()

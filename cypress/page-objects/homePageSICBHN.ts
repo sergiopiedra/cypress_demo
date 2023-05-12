@@ -14,5 +14,9 @@ class HomePage {
     getRegisterButton() {
         return cy.get('a.btn.btn-link[href="/register"]');
     }
+
+    getUserNameLabel() {
+        return cy.get('a#navbarDropdown.nav-link.dropdown-toggle');
+    }
 }
 export default new HomePage()

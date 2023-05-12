@@ -1,5 +1,6 @@
 {
-  "name": "Using fixtures to represent data",
-  "email": "testcypressdemo2@yopmail.com",
-  "password": "gfTd29KXJx2Sn4q"
+  "user": {
+    "email": "testcypressdemo2@yopmail.com",
+    "password": "gfTd29KXJx2Sn4q"
+  }
 }

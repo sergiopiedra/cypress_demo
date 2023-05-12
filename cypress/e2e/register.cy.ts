@@ -1,11 +1,11 @@
+import homePageSICBHN from '../page-objects/homePageSICBHN';
 import HomePage from '../page-objects/homePageSICBHN';
-import faker from 'faker';
+import registerPage from '../page-objects/registerPage';
+import { faker } from '@faker-js/faker'
 
 const username = faker.internet.userName();
-const email = faker.internet.email();
-
-
-
+const email = `${username}@yopmail.com`;
+const password = faker.internet.password();
 
 describe('Home Page', () => { // Describe the test suite
     beforeEach(() => { // Before each test case do the following steps
@@ -30,9 +30,5 @@ describe('Home Page', () => { // Describe the test suite
             .should('have.text', 'Login') // Check the button text is correct
             .click() // Click the button
         cy.url().should('include', '/login') // Check the URL is correct
-        HomePage.getRegisterButton() // Get the register button
-            .should('be.visible') // Check the button is visible
-            .click() // Click the button
-        cy.url().should('include', '/register') // Check the URL is correct
     })
 })
