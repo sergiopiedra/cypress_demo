@@ -35,3 +35,38 @@ npm install cypress --save-dev typescript @types/node @types/cypress
 npx cypress open
 ```
 ######  *This will open the Cypress Test Runner, which will allow you to run your tests and view the results.*
+
+### 3. Create a Cypress Test Case
+- In the Cypress folder, create a new folder called `page-objects`.
+- In this folder, create a new file called `homePage.ts`.
+- In the `homePage.ts` file, add the following code:
+```
+class HomePage {
+  visit() {
+    cy.visit('https://www.chorotega.una.ac.cr/');
+  }
+
+  getTitle() {
+    return cy.title();
+  }
+}
+export default new HomePage()
+```
+- In the Cypress folder, create a new folder called `integrations`.
+-  In the `integrations` folder, create a new file called `testNameDemo.spec.ts`.
+-  In the `testNameDemo.spec.ts` file, add the following code:
+```
+import HomePage from '../page-objects/HomePage'
+
+describe('Home Page', () => {
+  before(() => {
+    HomePage.visit()
+  })
+
+  it('should have the correct title', () => {
+    HomePage.getTitle().should('eq', 'Sede Regional Chorotega');
+  })
+})
+```
+- Save the file.
+- In the Cypress Test Runner, click on the `testNameDemo.spec.ts` file to run the test.
