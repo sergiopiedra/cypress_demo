@@ -1,4 +1,4 @@
-import HomePage from '../page-objects/homePage'
+import HomePage from '../page-objects/homePageUNA'
 
 describe('Home Page', () => {
   beforeEach(() => {

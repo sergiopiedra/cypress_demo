@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "baseUrl": "./cypress",
+    "baseUrl": "./node_modules/@types",
     "target": "es5",
     "lib": ["es5", "dom"],
-    "types": ["cypress", "node", "@cypress/xpath"]
+    "types": ["cypress", "node", "@cypress/xpath", "@types/faker"]
   },
   "include": ["**/*.ts"]
 }
